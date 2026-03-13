@@ -129,7 +129,7 @@ export default function Home() {
 
           <p className="inline-flex items-center gap-2 rounded-full border border-violet-200/30 bg-violet-300/20 px-4 py-1 text-sm font-medium">
             <ScissorsIcon />
-            Cours de couture individuels
+            Cours de couture
           </p>
 
           <h1 className="text-3xl font-bold sm:text-4xl">
@@ -154,8 +154,7 @@ export default function Home() {
             <p className="mb-2 text-base font-semibold text-violet-50">
               Tarifs
             </p>
-            <p>25€ / heure</p>
-            <p>150€ pour 10 heures</p>
+            <p>20€ / heure</p>
           </div>
 
           <div className="space-y-2 text-sm text-violet-200">
