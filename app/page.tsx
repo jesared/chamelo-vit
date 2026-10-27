@@ -44,7 +44,8 @@ export default function Home() {
           <span>Cham&apos;élo <i>Couture</i></span>
         </a>
         <nav aria-label="Navigation principale">
-          <a href="#cours">Prestations</a>
+          <a href="#prestations">Prestations</a>
+          <a href="#cours">Cours</a>
           <a href="#realisations">Réalisations</a>
           <a href="#tarifs">Tarifs</a>
           <a href="#contact" className="nav-cta">Me contacter <span aria-hidden="true">↗</span></a>
@@ -73,7 +74,7 @@ export default function Home() {
           <p className="art-caption">Un vêtement bien ajusté,<br />l&apos;assurance d&apos;être bien.</p>
           <span className="art-thread" aria-hidden="true" />
         </div>
-        <div className="hero-bottom"><span>01 — 03</span><span>FAIT MAIN, AVEC LE CŒUR</span><a href="#cours" aria-label="Défiler vers les cours">↓</a></div>
+        <div className="hero-bottom"><span>01 — 03</span><span>FAIT MAIN, AVEC LE CŒUR</span><a href="#prestations" aria-label="Défiler vers les prestations">↓</a></div>
       </section>
 
       <section className="intro-strip" aria-label="Notre approche">
@@ -106,7 +107,34 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="services section-wrap" id="cours">
+      <section className="course-section" id="cours">
+        <div className="course-inner">
+          <div className="course-copy">
+            <p className="eyebrow">Apprendre · créer · réaliser</p>
+            <h2>Les cours de couture<br /><em>à votre rythme.</em></h2>
+            <p className="course-intro">Avec Elodie Barcelo, apprenez les bases ou perfectionnez vos techniques dans une ambiance conviviale et créative.</p>
+            <div className="course-points">
+              <div><span>01</span><p><strong>Apprenez</strong> les bases ou perfectionnez vos techniques.</p></div>
+              <div><span>02</span><p><strong>Créez</strong> vos vêtements et accessoires.</p></div>
+              <div><span>03</span><p><strong>Réalisez</strong> vos projets avec des conseils personnalisés.</p></div>
+              <div><span>04</span><p><strong>Progressez</strong> à votre rythme, dans la bonne humeur.</p></div>
+            </div>
+          </div>
+          <div className="course-card">
+            <p className="course-card-title">Cours particuliers</p>
+            <p className="course-card-subtitle">Un accompagnement 100 % personnalisé</p>
+            <div className="course-prices">
+              <article className="course-price-featured"><span>Formule 3 heures <i>Bon plan</i></span><strong>45 €</strong><em>la séance</em><small>Soit 15 € / heure</small></article>
+              <article className="course-price-hour"><span>À l&apos;heure</span><strong>20 €</strong><em>de l&apos;heure</em></article>
+            </div>
+            <p className="course-price-description">Un accompagnement adapté à vos besoins et à vos projets : vêtements, accessoires, retouches…</p>
+            <div className="course-supplies"><span className="supply-icon" aria-hidden="true">✂</span><p><strong>Machine et petit matériel à disposition.</strong><br />Tissu, thermocollant et patron sont à prévoir (non fournis).</p></div>
+            <a className="button button-dark" href="#contact">Réserver un cours <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section className="services section-wrap" id="prestations">
         <div className="section-heading">
           <div><p className="eyebrow">Des retouches sur mesure</p><h2>Je prends soin<br />de vos <em>vêtements.</em></h2></div>
           <p className="section-aside">Du pantalon aux rideaux, chaque pièce est travaillée avec soin, des conseils personnalisés et des matériaux adaptés.</p>
@@ -151,8 +179,8 @@ export default function Home() {
         </div>
         <form className="contact-form" action="mailto:elodie51@chamelocouture.fr" method="post" encType="text/plain">
           <div className="form-row"><label>Votre prénom<input name="Prénom" type="text" placeholder="Comment vous appeler ?" required /></label><label>Votre email<input name="Email" type="email" placeholder="vous@exemple.fr" required /></label></div>
-          <label>Type de retouche<select name="Sujet" defaultValue=""><option value="" disabled>Choisir une retouche</option><option>Ourlet</option><option>Fermeture</option><option>Accroc ou trou</option><option>Bouton</option><option>Rideaux</option><option>Autre retouche</option></select></label>
-          <label>Parlez-moi de votre vêtement<textarea name="Message" rows={4} placeholder="Type de vêtement, retouche souhaitée, délai…" required /></label>
+          <label>Votre demande<select name="Sujet" defaultValue=""><option value="" disabled>Choisir un sujet</option><option>Cours particuliers</option><option>Retouche ou réparation</option><option>Broderie personnalisée</option><option>Autre demande</option></select></label>
+          <label>Votre message<textarea name="Message" rows={4} placeholder="Votre projet, une question, vos disponibilités…" required /></label>
           <button className="button button-dark" type="submit">Demander un devis <span aria-hidden="true">↗</span></button>
           <p className="form-note">Votre logiciel de messagerie s&apos;ouvrira pour envoyer le message.</p>
         </form>

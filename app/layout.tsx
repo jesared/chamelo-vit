@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Cham'élo Couture | Retouches à Châlons-en-Champagne",
+  title: "Cham'élo Couture | Cours & retouches à Châlons-en-Champagne",
   description:
-    "Retouches soignées et durables à Châlons-en-Champagne. Ourlets, fermetures, réparations et rideaux par Cham'élo Couture.",
+    "Cours particuliers de couture à votre rythme et retouches soignées à Châlons-en-Champagne. Formule 3 heures à 45 € ou 20 € de l'heure.",
 };
 
 export default function RootLayout({
