@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Cham'élo Couture | Cours de couture individuels",
+  title: "Cham'élo Couture | Retouches à Châlons-en-Champagne",
   description:
-    "Retouches, créations et cours de couture individuels à Mourmelon-le-Petit.",
+    "Retouches soignées et durables à Châlons-en-Champagne. Ourlets, fermetures, réparations et rideaux par Cham'élo Couture.",
 };
 
 export default function RootLayout({
