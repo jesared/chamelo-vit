@@ -110,3 +110,11 @@
 .site-header{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.95);backdrop-filter:blur(12px)}
 main section[id]{scroll-margin-top:108px}
 @media(max-width:640px){main section[id]{scroll-margin-top:86px}}
+@media(max-width:640px){
+  .site-header{height:auto;min-height:108px;flex-wrap:wrap;align-content:center;gap:0;padding:8px 20px 0}
+  .site-header nav{width:100%;justify-content:space-between;gap:10px;overflow-x:auto;padding:0 0 9px;scrollbar-width:none}
+  .site-header nav::-webkit-scrollbar{display:none}
+  .site-header nav>a:not(.nav-cta){display:inline-flex;flex:0 0 auto;white-space:nowrap;font-size:10px;color:#5d5559}
+  .site-header .nav-cta{flex:0 0 auto;padding:8px 10px;font-size:10px;white-space:nowrap}
+  main section[id]{scroll-margin-top:122px}
+}
