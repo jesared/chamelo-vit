@@ -67,13 +67,10 @@ export default function Home() {
         </div>
         <div className="hero-art" aria-label="Univers Cham'élo Couture">
           <div className="art-blob" />
-          <div className="hero-portrait">
-            <Image src="/images/perfecto-cousu.jpg" alt="La couturière porte un perfecto cousu à l'atelier" fill priority sizes="(max-width: 640px) 80vw, 360px" className="hero-portrait-image" />
-            <div className="portrait-caption"><span>Une pièce cousue à l&apos;atelier</span><strong>Le perfecto Cham&apos;élo</strong></div>
-            <div className="portrait-stamp"><Image src="/logo.png" alt="" width={100} height={100} /></div>
-          </div>
+          <div className="art-circle"><Image src="/logo.png" alt="Cham'élo Couture" width={300} height={300} priority /></div>
           <span className="art-stitch stitch-one" aria-hidden="true">✳</span>
           <span className="art-stitch stitch-two" aria-hidden="true">✳</span>
+          <p className="art-caption">Un vêtement bien ajusté,<br />l&apos;assurance d&apos;être bien.</p>
           <span className="art-thread" aria-hidden="true" />
         </div>
         <div className="hero-bottom"><span>01 — 03</span><span>FAIT MAIN, AVEC LE CŒUR</span><a href="#cours" aria-label="Défiler vers les cours">↓</a></div>
