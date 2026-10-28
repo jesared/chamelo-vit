@@ -1,1 +1,1 @@
-export const siteUrl = "https://chamelo-vit.vercel.app";
+export const siteUrl = "https://www.chamelocouture.fr";
